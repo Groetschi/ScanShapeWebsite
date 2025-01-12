@@ -2,7 +2,7 @@
     "applinks": {
         "details": [
             {
-                "appID": "ABCDE12345.com.myapp",
+                "appID": "com.lukas.gr.ScanShape",
                 "paths": ["/home/*", "/product/*", "/user/*"]
             }
         ]
