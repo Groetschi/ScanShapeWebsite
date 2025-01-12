@@ -1,0 +1,10 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appID": "com.lukas.gr.ScanShape",
+                "paths": ["/home/*", "/product/*", "/user/*"]
+            }
+        ]
+    }
+}
