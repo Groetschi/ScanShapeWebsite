@@ -17,3 +17,6 @@ jobs:
         destination: ./_site
         verbose: true
         token: ${{ secrets.GITHUB_TOKEN }}
+
+include:
+  - ".well-known"
