@@ -502,22 +502,25 @@
     };
 
     document.getElementById("language-select").addEventListener("change", function() {
-        let lang = this.value;
-        document.getElementById("site-title").innerText = translations[lang].siteTitle;
-        document.getElementById("nav-about").innerText = translations[lang].navAbout;
-        document.getElementById("nav-contact").innerText = translations[lang].navContact;
-        document.getElementById("nav-features").innerText = translations[lang].navFeatures;
-        document.getElementById("nav-entrepreneurs").innerText = translations[lang].navEntrepreneurs;
-        document.getElementById("about-title").innerText = translations[lang].aboutTitle;
-        document.getElementById("about-text").innerText = translations[lang].aboutText;
-        document.getElementById("features-title").innerText = translations[lang].featuresTitle;
-        document.getElementById("features-text").innerText = translations[lang].featuresText;
-        document.getElementById("benefits-title").innerText = translations[lang].benefitsTitle;
-        document.getElementById("benefits-text").innerText = translations[lang].benefitsText;
-        document.getElementById("footer-impressum").innerText = translations[lang].footerImpressum;
-        document.getElementById("footer-privacy").innerText = translations[lang].footerPrivacy;
-        document.getElementById("footer-terms").innerText = translations[lang].footerTerms;
-    });
+    let lang = this.value;
+    
+    document.getElementById("site-title").innerText = translations[lang].siteTitle;
+    document.getElementById("nav-about").innerText = translations[lang].navAbout;
+    document.getElementById("nav-contact").innerText = translations[lang].navContact;
+    document.getElementById("nav-features").innerText = translations[lang].navFeatures;
+    document.getElementById("nav-entrepreneurs").innerText = translations[lang].navEntrepreneurs;
+    document.getElementById("about-title").innerText = translations[lang].aboutTitle;
+    document.getElementById("about-text").innerText = translations[lang].aboutText;
+    document.getElementById("features-title").innerText = translations[lang].featuresTitle;
+    document.getElementById("features-text").innerText = translations[lang].featuresText;
+    document.getElementById("benefits-title").innerText = translations[lang].benefitsTitle;
+    document.getElementById("benefits-text").innerText = translations[lang].benefitsText;
+    
+    // Fix: Update the text inside the <a> tags without removing the <a> element
+    document.querySelector("#footer-impressum").textContent = translations[lang].footerImpressum;
+    document.querySelector("#footer-privacy").textContent = translations[lang].footerPrivacy;
+    document.querySelector("#footer-terms").textContent = translations[lang].footerTerms;
+});
 </script>
 
 </body>
