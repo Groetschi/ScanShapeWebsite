@@ -239,40 +239,7 @@
 --!>
 -->
 
-
-
 <!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dein Unternehmen</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body { font-family: system-ui, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header, footer { background: #333; color: #fff; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
-    main { padding: 2rem 1rem; }
-    a { color: #007BFF; text-decoration: none; margin: 0 10px; }
-    a:hover { text-decoration: underline; }
-    
-    /* Language switcher styling */
-    .language-switcher {
-      position: relative;
-      display: inline-block;
-    }
-    .language-switcher select {
-      background: #fff;
-      border: none;
-      padding: 5px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Dein Unternehmen</h1>
-    <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -284,59 +251,49 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            text-align: center;
         }
         header {
             background-color: #333;
             color: #fff;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 1rem 0;
         }
-        header nav a {
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0.5rem 0;
+        }
+        nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 1rem;
             font-size: 1rem;
         }
-        header nav a:hover {
+        nav a:hover {
             text-decoration: underline;
         }
-        section {
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
             padding: 2rem;
+            text-align: left;
         }
         h1, h2 {
             color: #333;
+            text-align: center;
         }
         footer {
             background-color: #f1f1f1;
-            padding: 1rem 2rem;
+            padding: 1rem 0;
             text-align: center;
-            font-size: 0.9rem;
             border-top: 1px solid #ccc;
         }
-        footer a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Language switcher styling */
         .language-switcher {
-            display: flex;
-            align-items: center;
+            margin-top: 1rem;
         }
-        .language-switcher label {
-            margin-right: 10px;
-        }
-        .language-switcher select {
-            background: #fff;
-            border: none;
+        select {
             padding: 5px;
-            font-size: 16px;
-            cursor: pointer;
+            font-size: 1rem;
         }
     </style>
 </head>
@@ -344,16 +301,12 @@
 
 <header>
     <h1>Website Name</h1>
-    
-    <!-- Navigation Menu -->
     <nav>
         <a href="#about-us" id="nav-about">Über uns</a>
         <a href="#contact" id="nav-contact">Kontakt</a>
         <a href="#features" id="nav-features">Funktionen</a>
         <a href="#entrepreneurs" id="nav-entrepreneurs">Für Unternehmer</a>
     </nav>
-
-    <!-- Language Switcher -->
     <div class="language-switcher">
         <label for="language-select">🌍 Sprache:</label>
         <select id="language-select">
@@ -368,20 +321,17 @@
     </div>
 </header>
 
-<section id="about-us">
-    <h2 id="about-title">Über uns</h2>
-    <p id="about-text">Unsere Mission ist es, [Ziel der Website]. Wir sind stolz darauf, unseren Kunden die besten Produkte und Dienstleistungen anzubieten, die sowohl innovativ als auch nachhaltig sind.</p>
-</section>
+<div class="container">
+    <section id="about-us">
+        <h2 id="about-title">Über uns</h2>
+        <p id="about-text">Unsere Mission ist es, [Ziel der Website]. Wir sind stolz darauf, unseren Kunden die besten Produkte und Dienstleistungen anzubieten, die sowohl innovativ als auch nachhaltig sind.</p>
+    </section>
 
-<section id="features">
-    <h2 id="features-title">Beschreibung des Produkts</h2>
-    <p id="features-text">Unser Produkt bietet [Hauptfunktionen des Produkts]. Es wurde entwickelt, um den Alltag zu erleichtern und bietet intuitive Lösungen für [Anwendungsfälle].</p>
-</section>
-
-<section id="benefits">
-    <h2 id="benefits-title">Benefit für den Kunden</h2>
-    <p id="benefits-text">Mit unserem Produkt sparen Sie Zeit, erhöhen Ihre Produktivität und profitieren von [besondere Vorteile]. Unsere Kunden schätzen besonders [einzigartiger Vorteil].</p>
-</section>
+    <section id="features">
+        <h2 id="features-title">Beschreibung des Produkts</h2>
+        <p id="features-text">Unser Produkt bietet [Hauptfunktionen des Produkts]. Es wurde entwickelt, um den Alltag zu erleichtern und bietet intuitive Lösungen für [Anwendungsfälle].</p>
+    </section>
+</div>
 
 <footer>
     <p>&copy; 2025 Dein Unternehmen. Alle Rechte vorbehalten.</p>
@@ -390,69 +340,8 @@
         <a href="#datenschutz" id="footer-privacy">Datenschutzerklärung</a> |
         <a href="#agb" id="footer-terms">AGB</a>
     </p>
-    <p>
-        Kontakt: <a href="mailto:info@deinunternehmen.de">info@deinunternehmen.de</a>
-    </p>
+    <p>Kontakt: <a href="mailto:info@deinunternehmen.de">info@deinunternehmen.de</a></p>
 </footer>
-
-<script>
-    const translations = {
-        de: {
-            navAbout: "Über uns",
-            navContact: "Kontakt",
-            navFeatures: "Funktionen",
-            navEntrepreneurs: "Für Unternehmer",
-            aboutTitle: "Über uns",
-            aboutText: "Unsere Mission ist es, [Ziel der Website]. Wir sind stolz darauf, unseren Kunden die besten Produkte und Dienstleistungen anzubieten, die sowohl innovativ als auch nachhaltig sind.",
-            featuresTitle: "Beschreibung des Produkts",
-            featuresText: "Unser Produkt bietet [Hauptfunktionen des Produkts]. Es wurde entwickelt, um den Alltag zu erleichtern und bietet intuitive Lösungen für [Anwendungsfälle].",
-            benefitsTitle: "Benefit für den Kunden",
-            benefitsText: "Mit unserem Produkt sparen Sie Zeit, erhöhen Ihre Produktivität und profitieren von [besondere Vorteile]. Unsere Kunden schätzen besonders [einzigartiger Vorteil].",
-            footerImpressum: "Impressum",
-            footerPrivacy: "Datenschutzerklärung",
-            footerTerms: "AGB"
-        },
-        en: {
-            navAbout: "About Us",
-            navContact: "Contact",
-            navFeatures: "Features",
-            navEntrepreneurs: "For Entrepreneurs",
-            aboutTitle: "About Us",
-            aboutText: "Our mission is [Website Goal]. We take pride in offering our customers the best products and services that are both innovative and sustainable.",
-            featuresTitle: "Product Description",
-            featuresText: "Our product offers [Main Features]. It is designed to simplify daily life and provides intuitive solutions for [Use Cases].",
-            benefitsTitle: "Customer Benefits",
-            benefitsText: "With our product, you save time, increase productivity, and benefit from [Special Benefits]. Our customers especially appreciate [Unique Benefit].",
-            footerImpressum: "Imprint",
-            footerPrivacy: "Privacy Policy",
-            footerTerms: "Terms & Conditions"
-        },
-        es: {
-            navAbout: "Sobre nosotros",
-            navContact: "Contacto",
-            navFeatures: "Características",
-            navEntrepreneurs: "Para empresarios",
-            aboutTitle: "Sobre nosotros",
-            aboutText: "Nuestra misión es [Objetivo del sitio web]. Nos enorgullece ofrecer a nuestros clientes los mejores productos y servicios, tanto innovadores como sostenibles.",
-            featuresTitle: "Descripción del producto",
-            featuresText: "Nuestro producto ofrece [Funciones principales]. Está diseñado para facilitar la vida diaria y proporciona soluciones intuitivas para [Casos de uso].",
-            benefitsTitle: "Beneficios para el cliente",
-            benefitsText: "Con nuestro producto, ahorra tiempo, aumenta la productividad y se beneficia de [Beneficios especiales]. Nuestros clientes aprecian especialmente [Beneficio único].",
-            footerImpressum: "Aviso legal",
-            footerPrivacy: "Política de privacidad",
-            footerTerms: "Términos y condiciones"
-        }
-    };
-
-    document.getElementById("language-select").addEventListener("change", function() {
-        const lang = this.value;
-        document.getElementById("nav-about").textContent = translations[lang].navAbout;
-        document.getElementById("about-title").textContent = translations[lang].aboutTitle;
-        document.getElementById("about-text").textContent = translations[lang].aboutText;
-        document.getElementById("features-title").textContent = translations[lang].featuresTitle;
-        document.getElementById("features-text").textContent = translations[lang].featuresText;
-    });
-</script>
 
 </body>
 </html>
