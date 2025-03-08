@@ -234,11 +234,11 @@
 
 </body>
 </html>
-
-
---!>
 -->
 
+
+
+<!--
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -345,3 +345,181 @@
 
 </body>
 </html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav {
+            display: flex;
+            gap: 1rem;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .lang-switcher {
+            margin-left: auto;
+        }
+        section {
+            padding: 2rem 0;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        footer {
+            background-color: #f1f1f1;
+            padding: 1rem 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 1px solid #ccc;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 id="site-title">Website Name</h1>
+    <nav>
+        <a href="#about-us" id="nav-about">Über uns</a>
+        <a href="#contact" id="nav-contact">Kontakt</a>
+        <a href="#features" id="nav-features">Funktionen</a>
+        <a href="#entrepreneurs" id="nav-entrepreneurs">Für Unternehmer</a>
+    </nav>
+    <select id="language-select" class="lang-switcher">
+        <option value="de">🇩🇪 Deutsch</option>
+        <option value="en">🇬🇧 English</option>
+        <option value="es">🇪🇸 Español</option>
+        <option value="it">🇮🇹 Italiano</option>
+        <option value="ru">🇷🇺 Русский</option>
+        <option value="fr">🇫🇷 Français</option>
+        <option value="ar">🇸🇦 العربية</option>
+    </select>
+</header>
+
+<div class="container">
+    <section id="about-us">
+        <h2 id="about-title">Über uns</h2>
+        <p id="about-text">Unsere Mission ist es, [Ziel der Website]. Wir sind stolz darauf, unseren Kunden die besten Produkte und Dienstleistungen anzubieten, die sowohl innovativ als auch nachhaltig sind.</p>
+    </section>
+
+    <section id="features">
+        <h2 id="features-title">Beschreibung des Produkts</h2>
+        <p id="features-text">Unser Produkt bietet [Hauptfunktionen des Produkts]. Es wurde entwickelt, um den Alltag zu erleichtern und bietet intuitive Lösungen für [Anwendungsfälle].</p>
+    </section>
+
+    <section id="benefits">
+        <h2 id="benefits-title">Benefit für den Kunden</h2>
+        <p id="benefits-text">Mit unserem Produkt sparen Sie Zeit, erhöhen Ihre Produktivität und profitieren von [besondere Vorteile]. Unsere Kunden schätzen besonders [einzigartiger Vorteil].</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Dein Unternehmen. Alle Rechte vorbehalten.</p>
+    <p>
+        <a href="#impressum" id="footer-impressum">Impressum</a> |
+        <a href="#datenschutz" id="footer-privacy">Datenschutzerklärung</a> |
+        <a href="#agb" id="footer-terms">AGB</a>
+    </p>
+    <p>
+        Kontakt: <a href="mailto:info@deinunternehmen.de">info@deinunternehmen.de</a>
+    </p>
+</footer>
+
+<script>
+    const translations = {
+        de: {
+            siteTitle: "Website Name",
+            navAbout: "Über uns",
+            navContact: "Kontakt",
+            navFeatures: "Funktionen",
+            navEntrepreneurs: "Für Unternehmer",
+            aboutTitle: "Über uns",
+            aboutText: "Unsere Mission ist es, [Ziel der Website]. Wir sind stolz darauf, unseren Kunden die besten Produkte und Dienstleistungen anzubieten, die sowohl innovativ als auch nachhaltig sind.",
+            featuresTitle: "Beschreibung des Produkts",
+            featuresText: "Unser Produkt bietet [Hauptfunktionen des Produkts]. Es wurde entwickelt, um den Alltag zu erleichtern und bietet intuitive Lösungen für [Anwendungsfälle].",
+            benefitsTitle: "Benefit für den Kunden",
+            benefitsText: "Mit unserem Produkt sparen Sie Zeit, erhöhen Ihre Produktivität und profitieren von [besondere Vorteile]. Unsere Kunden schätzen besonders [einzigartiger Vorteil].",
+            footerImpressum: "Impressum",
+            footerPrivacy: "Datenschutzerklärung",
+            footerTerms: "AGB"
+        },
+        en: {
+            siteTitle: "Website Name",
+            navAbout: "About Us",
+            navContact: "Contact",
+            navFeatures: "Features",
+            navEntrepreneurs: "For Entrepreneurs",
+            aboutTitle: "About Us",
+            aboutText: "Our mission is to [website goal]. We take pride in offering our customers the best products and services that are both innovative and sustainable.",
+            featuresTitle: "Product Description",
+            featuresText: "Our product offers [main product features]. It is designed to make everyday life easier and provides intuitive solutions for [use cases].",
+            benefitsTitle: "Customer Benefits",
+            benefitsText: "With our product, you save time, increase productivity, and benefit from [special advantages]. Our customers especially appreciate [unique benefit].",
+            footerImpressum: "Imprint",
+            footerPrivacy: "Privacy Policy",
+            footerTerms: "Terms & Conditions"
+        }
+        // Add other languages here...
+    };
+
+    document.getElementById("language-select").addEventListener("change", function() {
+        let lang = this.value;
+        document.getElementById("site-title").innerText = translations[lang].siteTitle;
+        document.getElementById("nav-about").innerText = translations[lang].navAbout;
+        document.getElementById("nav-contact").innerText = translations[lang].navContact;
+        document.getElementById("nav-features").innerText = translations[lang].navFeatures;
+        document.getElementById("nav-entrepreneurs").innerText = translations[lang].navEntrepreneurs;
+        document.getElementById("about-title").innerText = translations[lang].aboutTitle;
+        document.getElementById("about-text").innerText = translations[lang].aboutText;
+        document.getElementById("features-title").innerText = translations[lang].featuresTitle;
+        document.getElementById("features-text").innerText = translations[lang].featuresText;
+        document.getElementById("benefits-title").innerText = translations[lang].benefitsTitle;
+        document.getElementById("benefits-text").innerText = translations[lang].benefitsText;
+        document.getElementById("footer-impressum").innerText = translations[lang].footerImpressum;
+        document.getElementById("footer-privacy").innerText = translations[lang].footerPrivacy;
+        document.getElementById("footer-terms").innerText = translations[lang].footerTerms;
+    });
+</script>
+
+</body>
+</html>
+
