@@ -6,47 +6,150 @@
   <title>Impressum - Dein Unternehmen</title>
   <link rel="stylesheet" href="styles.css"> <!-- Optional: Shared stylesheet -->
   <style>
-    /* If you are not using a separate CSS file, include your styles here */
-    body { font-family: system-ui, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header, footer { background: #333; color: #fff; padding: 1rem; }
-    main { padding: 2rem 1rem; }
-    a { color: #007BFF; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    /* Base styles for readability and consistency */
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #fff;
+      color: #333;
+    }
+    
+    /* Header and Footer styles */
+    header, footer {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+    }
+    
+    header h1 {
+      font-size: 2.5rem; /* Prominent website name */
+      margin: 0.5em 0;
+      text-align: center;
+    }
+    
+    footer p {
+      font-size: 0.875rem;
+      margin: 0.5em 0;
+    }
+    
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Main content styling */
+    main {
+      padding: 2rem 1rem;
+    }
+    
+    main h2 {
+      font-size: 2rem;
+      margin: 1em 0 0.5em;
+      color: #333;
+    }
+    
+    /* Sub-headings for each section */
+    main h3 {
+      font-size: 1.5rem;
+      margin: 1em 0 0.5em;
+      color: #444;
+    }
+    
+    /* Paragraphs */
+    main p {
+      font-size: 1rem;
+      margin: 0.5em 0;
+      text-align: justify;
+    }
+    
+    /* Lists for clear itemization */
+    main ul {
+      margin: 0.5em 0 1em 1.5em;
+      padding: 0;
+      list-style-type: disc;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      main h2 {
+        font-size: 1.75rem;
+      }
+      main h3 {
+        font-size: 1.25rem;
+      }
+      main p {
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Dein Unternehmen</h1>
-    <!-- Optionally, include a navigation menu if desired -->
+    <!-- Optionally, include a navigation menu here -->
   </header>
   <main>
     <h2>Impressum</h2>
-    <p>Impressum
-
-Angaben gemäß § 5 TMG:
-
-Anbieter / Verantwortlicher:
-Firmenname: [Dein Firmenname]
-Vertretungsberechtigte(r): [Name des Geschäftsführers / der Geschäftsführerin]
-Rechtsform: [z. B. GmbH, AG, Einzelunternehmen]
-Sitz der Gesellschaft: [Straße, Hausnummer, PLZ, Ort]
-Registereintrag: [z. B. Handelsregister, Registernummer]
-Kontakt:
-Telefon: [Telefonnummer]
-Fax: [Faxnummer, falls vorhanden]
-E-Mail: [E-Mail-Adresse]
-Umsatzsteuer:
-Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: [USt-IdNr.]
-Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV:
-[Name, Anschrift und ggf. Kontakt des Verantwortlichen für journalistisch-redaktionell gestaltete Inhalte]
-Angaben zur Aufsichtsbehörde (falls zutreffend):
-[Name und Anschrift der zuständigen Aufsichtsbehörde, z. B. bei reglementierten Berufen oder Medienangeboten]
-Hinweise
-
-Haftungsausschluss:
-Dieses Impressum gilt ausschließlich für die Inhalte auf der eigenen Webseite. Für externe Links übernehmen wir keine Haftung.
-Plattformrolle:
-[Dein Firmenname] agiert als reine Vermittlungsplattform und ist nicht selbst Anbieter der angebotenen Waren oder Dienstleistungen. Die Verantwortung für die jeweiligen Inhalte, Produkte und Leistungen liegt ausschließlich bei den jeweiligen Anbietern bzw. Händlern.<!-- Weitere rechtliche Informationen können hier ergänzt werden -->
+    
+    <!-- Section for legal details -->
+    <section>
+      <h3>Angaben gemäß § 5 TMG</h3>
+      
+      <p><strong>Anbieter / Verantwortlicher:</strong></p>
+      <ul>
+        <li><strong>Firmenname:</strong> [Dein Firmenname]</li>
+        <li><strong>Vertretungsberechtigte(r):</strong> [Name des Geschäftsführers / der Geschäftsführerin]</li>
+        <li><strong>Rechtsform:</strong> [z. B. GmbH, AG, Einzelunternehmen]</li>
+        <li><strong>Sitz der Gesellschaft:</strong> [Straße, Hausnummer, PLZ, Ort]</li>
+        <li><strong>Registereintrag:</strong> [z. B. Handelsregister, Registernummer]</li>
+      </ul>
+      
+      <p><strong>Kontakt:</strong></p>
+      <ul>
+        <li><strong>Telefon:</strong> [Telefonnummer]</li>
+        <li><strong>Fax:</strong> [Faxnummer, falls vorhanden]</li>
+        <li><strong>E-Mail:</strong> [E-Mail-Adresse]</li>
+      </ul>
+      
+      <p><strong>Umsatzsteuer:</strong></p>
+      <p>
+        Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: [USt-IdNr.]
+      </p>
+      
+      <p><strong>Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV:</strong></p>
+      <p>
+        [Name, Anschrift und ggf. Kontakt des Verantwortlichen für journalistisch-redaktionell gestaltete Inhalte]
+      </p>
+      
+      <p><strong>Angaben zur Aufsichtsbehörde (falls zutreffend):</strong></p>
+      <p>
+        [Name und Anschrift der zuständigen Aufsichtsbehörde, z. B. bei reglementierten Berufen oder Medienangeboten]
+      </p>
+    </section>
+    
+    <!-- Section for additional notes -->
+    <section>
+      <h3>Hinweise</h3>
+      
+      <p><strong>Haftungsausschluss:</strong></p>
+      <p>
+        Dieses Impressum gilt ausschließlich für die Inhalte auf der eigenen Webseite. Für externe Links übernehmen wir keine Haftung.
+      </p>
+      
+      <p><strong>Plattformrolle:</strong></p>
+      <p>
+        [Dein Firmenname] agiert als reine Vermittlungsplattform und ist nicht selbst Anbieter der angebotenen Waren oder Dienstleistungen. Die Verantwortung für die jeweiligen Inhalte, Produkte und Leistungen liegt ausschließlich bei den jeweiligen Anbietern bzw. Händlern.
+      </p>
+    </section>
   </main>
   <footer>
     <p>&copy; 2025 Dein Unternehmen. Alle Rechte vorbehalten.</p>
