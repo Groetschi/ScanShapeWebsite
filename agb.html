@@ -7,87 +7,88 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     /* Base styling for the document */
-    body {
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #fff;
-      color: #333;
-    }
-    
-    /* Header and Footer */
-    header, footer {
-      background: #333;
-      color: #fff;
-      padding: 1rem;
-    }
-    
-    header h1 {
-      font-size: 2.5rem;
-      text-align: center;
-      margin: 0.5em 0;
-    }
-    
-    footer p {
-      font-size: 0.875rem;
-      margin: 0.5em 0;
-    }
-    
-    footer a {
-      color: #007BFF;
-      text-decoration: none;
-    }
-    
-    footer a:hover {
-      text-decoration: underline;
-    }
-    
-    /* Main content styling */
-    main {
-      padding: 2rem 1rem;
-    }
-    
-    main h2 {
-      font-size: 2rem;
-      margin: 1em 0 0.5em;
-      color: #333;
-    }
-    
-    main h3 {
-      font-size: 1.5rem;
-      margin: 1em 0 0.5em;
-      color: #444;
-    }
-    
-    main p {
-      font-size: 1rem;
-      margin: 0.5em 0;
-      text-align: justify;
-    }
-    
-    /* Lists for structured content */
-    main ul {
-      list-style-type: disc;
-      margin: 0.5em 0 1em 1.5em;
-      padding: 0;
-    }
-    
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      main h2 {
-        font-size: 1.75rem;
-      }
-      main h3 {
-        font-size: 1.25rem;
-      }
-      main p {
-        font-size: 0.95rem;
-      }
-    }
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;           /* 0 * 3 = 0 */
+  padding: 0;          /* 0 * 3 = 0 */
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+/* Header and Footer */
+header, footer {
+  background: #333;
+  color: #fff;
+  padding: 3rem;       /* 1rem * 3 = 3rem */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1.5em 0;     /* 0.5em * 3 = 1.5em (oben und unten) */
+}
+
+footer p {
+  font-size: 0.875rem;
+  margin: 1.5em 0;     /* 0.5em * 3 = 1.5em */
+}
+
+footer a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+  padding: 6rem 3rem;   /* 2rem * 3 = 6rem (oben/unten), 1rem * 3 = 3rem (links/rechts) */
+}
+
+main h2 {
+  font-size: 2rem;
+  margin: 3em 0 1.5em;  /* 1em -> 3em; 0 remains 0; 0.5em -> 1.5em */
+  color: #333;
+}
+
+main h3 {
+  font-size: 1.5rem;
+  margin: 3em 0 1.5em;  /* 1em -> 3em; 0 remains 0; 0.5em -> 1.5em */
+  color: #444;
+}
+
+main p {
+  font-size: 1rem;
+  margin: 1.5em 0;      /* 0.5em -> 1.5em */
+  text-align: justify;
+}
+
+/* Lists for structured content */
+main ul {
+  list-style-type: disc;
+  margin: 1.5em 0 3em 4.5em; /* 0.5em -> 1.5em, 1em -> 3em, 1.5em -> 4.5em */
+  padding: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  main h2 {
+    font-size: 1.75rem;
+  }
+  main h3 {
+    font-size: 1.25rem;
+  }
+  main p {
+    font-size: 0.95rem;
+  }
+}
+
   </style>
 </head>
 <body>
