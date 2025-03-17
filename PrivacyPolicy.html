@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -126,28 +127,20 @@
 
     <section>
       <h2>1. Information We Collect</h2>
-      <h3>1.1. For All Users</h3>
-      <p>When you interact with our ScanShape platform, we automatically log certain data from HTTP requests. This information includes:</p>
+      <p>
+        As our app is only accessible to registered users, we collect information solely from account holders. When you create an account on our ScanShape platform, we collect the following data:
+      </p>
       <ul>
-        <li><strong>Timestamp:</strong> The time at which the request was made.</li>
-        <li><strong>IP Address:</strong> Used for geolocation and abuse prevention.</li>
-        <li><strong>Page URL:</strong> The address of the requested page.</li>
-        <li><strong>Platform & Operating System:</strong> Details of your device environment.</li>
-        <li><strong>Preferred Language/Locale:</strong> Defaults to your browser’s locale, modifiable by you.</li>
-        <li><strong>Download Tracking:</strong> Whether an IP address has downloaded a specific package within the last 14 days.</li>
-      </ul>
-
-      <h3>1.2. With an Account</h3>
-      <p>If you register for an account, additional information is collected, including:</p>
-      <ul>
-        <li><strong>Email Address:</strong> Used for communications and account recovery.</li>
+        <li><strong>Email Address:</strong> Used for communications, account recovery, and notifications.</li>
         <li><strong>Passwords:</strong> Securely stored using industry-standard cryptographic techniques.</li>
         <li><strong>Profile Information:</strong> Such as website URLs, donation links, and other public details.</li>
         <li><strong>User-Generated Content:</strong> Comments, forum threads, reviews, etc.</li>
         <li><strong>Audit Log:</strong> Records of significant actions (e.g., logins, edits) with timestamps.</li>
         <li><strong>Forum Usernames:</strong> Collected to index forum topics and maintain unique identification.</li>
       </ul>
-      <p>Note: Packages (releases, screenshots, and metadata) are not considered personal information. Please only provide the necessary details as required.</p>
+      <p>
+        Additionally, when you interact with our platform, certain HTTP request data is logged, including the timestamp, IP address, page URL, device and operating system details, preferred language/locale, and download tracking information (retained for 14 days).
+      </p>
     </section>
 
     <section>
@@ -155,11 +148,11 @@
       <ul>
         <li><strong>Object Scanning Data:</strong> Our mobile app uses the rear camera to scan objects and locations. This data is stored only on your device for design and measurement purposes and is not transmitted to our servers.</li>
         <li><strong>HTTP Request Logs:</strong> Used for debugging, abuse prevention, and generating aggregated usage statistics (e.g., package download counts).</li>
-        <li><strong>Email Communications:</strong> To send essential system messages, such as password resets and privacy policy updates, as well as notifications which you can configure or opt out of.</li>
-        <li><strong>User Authentication:</strong> Passwords and related credentials are used solely to authenticate your access to the platform.</li>
-        <li><strong>Audit Logging:</strong> Records actions that may affect the security or integrity of the platform, aiding in troubleshooting and security analysis.</li>
+        <li><strong>Email Communications:</strong> To send essential system messages such as password resets and policy updates, as well as notifications which you can customize or opt out of.</li>
+        <li><strong>User Authentication:</strong> Collected credentials are used solely to authenticate your access to the platform.</li>
+        <li><strong>Audit Logging:</strong> Helps record actions that may affect the security or integrity of the platform for troubleshooting and security analysis.</li>
         <li><strong>Locale Settings:</strong> Used to customize the interface and translate communications into your preferred language.</li>
-        <li><strong>IP Address Monitoring:</strong> Logged to monitor and combat abuse; cached download tracking data is retained for 14 days to prevent duplicate counts.</li>
+        <li><strong>IP Address Monitoring:</strong> Logged to monitor and combat abuse; cached download tracking data is retained for 14 days to avoid duplicate counts.</li>
       </ul>
       <p>
         <strong>TrueDepth API Usage:</strong> Our app utilizes the TrueDepth API to enhance the accuracy and quality of object scanning. No facial or personally identifiable facial data is collected, stored, or processed.
@@ -169,10 +162,18 @@
     <section>
       <h2>3. Data Sharing and Storage</h2>
       <p>
-        <strong>Third Parties:</strong> We do not share personal information with third parties, except for necessary error logging and performance monitoring using anonymized data.
+        <strong>Third Parties:</strong> We share your data with trusted third-party service providers to improve our services, enhance user experience, and bolster user safety. This may include:
+      </p>
+      <ul>
+        <li>Analytics and performance monitoring services to optimize platform functionality.</li>
+        <li>Error logging services that help us detect and resolve issues quickly.</li>
+        <li>Security services that assist in monitoring for abuse and protecting user accounts.</li>
+      </ul>
+      <p>
+        All third parties are contractually bound to maintain the confidentiality and security of your data. Any data shared is anonymized or aggregated where possible, and only the minimum necessary information is transmitted.
       </p>
       <p>
-        <strong>Data Storage:</strong> Our production servers are located in Germany. Encrypted backups are stored in the United Kingdom and, for redundancy, may also be stored in other jurisdictions within the EU or US. By using our service, you consent to the transfer and storage of data within these regions.
+        <strong>Data Storage:</strong> Our production servers are located in Germany. Encrypted backups are stored in the United Kingdom and, for redundancy, may be stored in other jurisdictions within the EU or US. By using our service, you consent to the transfer and storage of data within these regions.
       </p>
     </section>
 
@@ -182,12 +183,12 @@
         We take the security of your data seriously:
       </p>
       <ul>
-        <li>HTTP request logs are accessible only by the admin for debugging and abuse prevention purposes. These logs may be shared with select personnel after removing personal information.</li>
-        <li>Encrypted backups are accessible only to authorized staff (e.g., moderators, core developers) under a dual-control system.</li>
-        <li>Email addresses are visible only to moderators and admins for support purposes and are not shared externally.</li>
+        <li>HTTP request logs are accessible only by authorized personnel for debugging and abuse prevention purposes, with personal information removed as necessary.</li>
+        <li>Encrypted backups are accessible only to select staff under a dual-control system.</li>
+        <li>Email addresses are visible only to authorized support staff for assistance and are not shared externally.</li>
         <li>Passwords and other sensitive credentials are stored securely using industry-standard cryptographic practices.</li>
         <li>Audit logs and user profile information are accessible only to authorized personnel for security oversight.</li>
-        <li>In certain circumstances, such as legal obligations, we may be required to share data with law enforcement agencies.</li>
+        <li>When legally required, we may share data with law enforcement agencies.</li>
       </ul>
     </section>
 
@@ -196,7 +197,7 @@
       <ul>
         <li>HTTP request logs are automatically deleted after 2 weeks.</li>
         <li>Usernames may be retained indefinitely for indexing forum topics and package identification.</li>
-        <li>Other personal data will be removed upon request unless retention is required by law or necessary for operational purposes.</li>
+        <li>Other personal data will be removed upon request, unless retention is required by law or necessary for operational purposes.</li>
         <li>Download tracking information (IP address caches) is deleted after 14 days.</li>
       </ul>
     </section>
@@ -204,7 +205,7 @@
     <section>
       <h2>6. Removal of Personal Information</h2>
       <p>
-        If you wish to have your personal information removed, please submit a removal request. If your username is linked to existing packages or forum topics, your account will be deactivated and wiped of personal details rather than being completely removed.
+        If you wish to have your personal information removed, please submit a removal request. In cases where your username is linked to existing packages or forum topics, your account will be deactivated and wiped of personal details rather than being completely removed.
       </p>
     </section>
 
@@ -238,3 +239,4 @@
   </footer>
 </body>
 </html>
+```
